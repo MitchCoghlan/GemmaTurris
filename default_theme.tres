@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://0y8b8rp20cxl"]
+
+[ext_resource type="FontFile" uid="uid://0yi72blrmoys" path="res://fonts/ProggyClean/ProggyClean.ttf" id="1_gexef"]
+
+[resource]
+default_font = ExtResource("1_gexef")
+default_font_size = 25

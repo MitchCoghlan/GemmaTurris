@@ -1,0 +1,61 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Super Mushroom Man"
+config/version="0.0.0.1"
+run/main_scene="res://game.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/image="res://credits.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="res://icon.png"
+boot_splash/minimum_display_time=1800
+
+[autoload]
+
+SystemManager="*res://runtime/system_manager.gd"
+AudioManager="*res://runtime/audio_manager.gd"
+
+[gui]
+
+theme/default_theme_scale=2.0
+theme/custom="res://default_theme.tres"
+theme/custom_font="res://fonts/unifont/unifont-15.1.04.otf"
+theme/default_font_antialiasing=0
+theme/default_font_hinting=0
+
+[internationalization]
+
+locale/include_text_server_data=true
+locale/fallback="ja"
+pseudolocalization/replace_with_accents=false
+rendering/text_driver="ICU / HarfBuzz / Graphite (Built-in)"
+locale/locale_filter_mode=0
+
+[layer_names]
+
+2d_physics/layer_1="Players"
+2d_physics/layer_2="Enemies"
+2d_physics/layer_3="Allies"
+2d_physics/layer_4="Collectables"
+2d_physics/layer_5="Terrain"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+textures/canvas_textures/default_texture_repeat=2
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
+textures/lossless_compression/force_png=true
+textures/decals/filter=0
+textures/light_projectors/filter=0

@@ -1,0 +1,5 @@
+.godot/*
+*.translation
+*.import
+export_presets.cfg
+gamejolt-api-key.txt
