@@ -7,7 +7,7 @@ class SysInfoInstance extends Node:
 				"OS": {
 					"name": OS.get_distribution_name(),
 					"version": OS.get_version(),
-					"type": OS.get_name()
+					"platform": OS.get_name()
 				},
 				"processor": {
 					"count": OS.get_processor_count(),
@@ -21,7 +21,7 @@ class SysInfoInstance extends Node:
 		return system_info
 	
 	func _ready():
-		name = "InfoHandlerInstance"
+		name = "SysInfoInstance"
 		match OS.get_name():
 			"Windows":
 				OS.execute("cls", [])
