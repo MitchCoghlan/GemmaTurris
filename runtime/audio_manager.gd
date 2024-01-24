@@ -4,7 +4,7 @@ class MusicInstance extends Node:
 	var stream_player: AudioStreamPlayer
 	var looping: bool = true
 	
-	func load_stream(stream: AudioStream, force_play: bool = false):
+	func load_stream(stream: AudioStream, force_play: bool = false): # Best recommended that you use AudioStreamMP3 for loading audio files from code
 		var old_stream: AudioStream = stream_player.stream
 		stream_player.stream = stream
 		if force_play:
